@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(120, 7, 124, 0.781);
+  font-family: "Roboto", sans-serif;
+}
+.data {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.player--0,
+.player--1 {
+  width: 24rem;
+  height: 100%;
+  background-color: rgba(138, 120, 120, 0.6);;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 2.2rem;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+.winner-score{
+    margin-top: 1.5rem;
+}
+.active{
+  background-color: rgba(207, 202, 202, 0.6) ;
+}
+.winnerSurprise--0,.winnerSurprise--1{
+    height: 20vh;
+    width: 12rem;
+    background: rgb(204, 83, 83);
+    /* margin-left: 7rem; */
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bold;
+    visibility: hidden;
+}
+.sprite {
+  height: 170px;
+  width: 170px;
+  margin-top: 2.5rem;
+  background-image: url("./unnamed.png");
+  background-repeat: no-repeat;
+  background-position-x: 0px;
+  background-position-y: 0px;
+}
+.heading {
+  margin-top: 1rem;
+}
+.current-score {
+  height: 9vh;
+  width: 7rem;
+  background-color: rgb(136, 22, 75);
+  border-radius: 3px;
+  font-size: 12px;
+  text-align: center;
+  padding: 8px;
+  padding-top: 13px;
+  color: white;
+  line-height: 20px;
+  margin-top: 2.4rem;
+}
+.winner-score {
+  color: rgb(136, 22, 75);
+}
+.btn {
+  width: 6rem;
+  height: 25px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.btn-section {
+  display: flex;
+}
+
+.game {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#refersh-game{
+    margin-top: 2.4rem;
+}
+#rolldice{
+    margin-top: 4rem;
+}
+#hold{
+    margin-top: 1rem;
+}
+.hud {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+
+.black {
+  background: #000;
+}

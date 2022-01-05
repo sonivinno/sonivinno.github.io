@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <div class="data">
+      <div class="game">
+        <div class="player--0 active">
+          <p class="heading">PLAYER 1</p>
+          <p class="winner-score" id="winner--0">0</p>
+          <div class="winnerSurprise--0"><div>🎉🎉🎉🎉&#128525;&#128525;</div><p>WINNER</p></div>
+          <div class="btn-section">
+            <div class="current-score">
+              <p>CURRENT</p>
+              <p class="zero" id="current--0">0</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="player--1 ">
+          <p class="heading">PLAYER 2</p>
+          <p class="winner-score" id="winner--1">0</p>
+          <div class="winnerSurprise--1">
+            <div>🎉🎉🎉🎉&#128525;&#128525;</div><p>WINNER</p>
+          </div>
+          <div class="current-score">
+            <p>CURRENT</p>
+            <p class="zero2" id="current--1">0</p>
+          </div>
+        </div>
+
+        <div class="hud">
+          <button class="btn" id="refersh-game" onclick="newgame()">🎮NEW GAME</button>
+          <div class="sprite"></div>
+          <button class="btn" id="rolldice" onclick="rollbutton()">
+            &#127922; ROLL DICE
+          </button>
+          <button class="btn" class="btn1" id="hold" onclick="holdbutton()">
+            &#127996; HOLD
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./confetti.js"></script>
+    <script> 
+         // startit();
+        const startit = () => {
+            setTimeout(function(){
+            confetti.start();
+            });
+        };
+    //    stopit
+           const stopit = () => {
+            setTimeout(function(){
+            confetti.stop();
+            },6000);
+        };
+    </script>
+
+    <script src="./script.js"> </script>
+  </body>
+</html>
